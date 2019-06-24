@@ -8,6 +8,8 @@ Our data pipeline must fetch data from [News API](https://newsapi.org),
  transform the data into a tabular structure,
  and store the transformed data on [Amazon S3](https://aws.amazon.com/s3/).
 
+## Things to do before running:
+1. Add `API_KEY`, `AWS_ACCESS_KEY`,`AWS_SECRET_KEY` on your bash_profile
 ## Quickstart
 1. We recommend starting with a fresh virtualenv using Python 3.6 on a *nix system.
     * Our docker versions are docker 17.12.0-ce and docker-compose 1.18.0.
