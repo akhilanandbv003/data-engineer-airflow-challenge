@@ -1,9 +1,9 @@
 from io import StringIO
-
+import os
 import pandas as pd
 import requests
 
-API_KEY = '411d2105b0ce44c79c199affeb3ee852'
+API_KEY = os.environ['API_KEY']
 
 
 def get_sources_from_api(language='en'):

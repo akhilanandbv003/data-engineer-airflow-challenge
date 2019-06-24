@@ -10,7 +10,7 @@ def get_keywords_data(keyword):
     :param keyword:
     :return:
     """
-    API_KEY = "411d2105b0ce44c79c199affeb3ee852"
+    API_KEY = os.environ['API_KEY']
 
     try:
         api_url = 'https://newsapi.org/v2/everything?q={}&from=2019-05-24&sortBy=publishedAt&apiKey={}'.format(

@@ -20,10 +20,8 @@ def write_to_s3(message_value: str, s3_location: str, file_name: str):
     --------
     write_to_s3(file ,"mybucket/filename.json" )
     """
-    ACCESS_KEY = 'AKIAIES4EFMCGA6JXUVA'
-    # ACCESS_KEY = os.environ['AWS_ACCESS_KEY']
-    # SECRET_KEY = os.environ['AWS_SECRET_KEY']
-    SECRET_KEY = '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'
+    ACCESS_KEY = os.environ['AWS_ACCESS_KEY']
+    SECRET_KEY = os.environ['AWS_SECRET_KEY']
 
     # json_data = message_value.encode()
     s3 = boto3.resource('s3',
