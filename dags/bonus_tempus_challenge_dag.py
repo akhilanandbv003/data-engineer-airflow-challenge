@@ -20,7 +20,7 @@ default_args = {
 dag = DAG(
     'keywordsbonusdag',
     default_args=default_args,
-    schedule_interval=timedelta(minutes=5),  # DAG will run once every 5 minutes
+    schedule_interval='@daily',  # DAG will run once every day
     catchup=False,
 )
 
